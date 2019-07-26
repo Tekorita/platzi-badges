@@ -9,12 +9,10 @@ class Badge extends React.Component {
                 <div>
                     <img src={confLogo} alt="Logo de la conferencia" />
                 </div>
-
                 <div>
                     <img src={confLogo} alt="Logo de la conferencia" />
                     <h1>David <br /> Palma</h1>
                 </div>
-
                 <div>
                     <p>Fronted Engineer</p>
                     <p>@DavidPalma</p>
