@@ -18,7 +18,7 @@ class Badge extends React.Component {
                     <p>@DavidPalma</p>
                 </div>
                 <div>
-                    <p>Platzi conf</p>
+                    <p>Platzi conferencia</p>
                 </div>
             </div>
         )
