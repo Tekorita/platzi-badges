@@ -21,7 +21,6 @@ class Badge extends React.Component {
                 <div>
                     <p>Platzi conf</p>
                 </div>
-
             </div>
         )
     }
