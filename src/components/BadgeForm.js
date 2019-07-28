@@ -22,7 +22,7 @@ class BadgeForm extends React.Component {
         })
     }
     handleClick = e => {
-        console.log("was click")//metodo para extraer lo q se esta escribiendo
+        console.log("was click here")//metodo para extraer lo q se esta escribiendo
     }
     handleSubmit = e => {
         e.preventDefault() //Aqui detenemos el evento del boton para que no envie datos
