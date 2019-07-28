@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/Badge.css"
+import "./styles/Badge.css"
 import confLogo from '../images/badge-header.svg'
 //Los componentes son clases
 
