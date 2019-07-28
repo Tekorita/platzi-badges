@@ -18,7 +18,6 @@ class BadgeForm extends React.Component {
         })//metodo para extraer lo q se esta escribiendo*/
         this.setState({
             [e.target.name]: e.target.value,
-
         })
     }
     handleClick = e => {
@@ -27,6 +26,7 @@ class BadgeForm extends React.Component {
     handleSubmit = e => {
         e.preventDefault() //Aqui detenemos el evento del boton para que no envie datos
         console.log("Form was submited, message confirmed")//metodo para extraer lo q se esta escribiendo
+        console.log(this.state)//Aqui imprimos todo el estado de los inputs del formulario
     }
     render() {
         return (
