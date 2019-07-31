@@ -17,7 +17,7 @@ async function callApi(endpoint, options = {}) {
   const url = BASE_URL + endpoint;
   const response = await fetch(url, options);
   const data = await response.json();
-
+  console.log(`Esta es la api: ${url}`)
   return data;
 }
 
@@ -29,6 +29,7 @@ const api = {
       return callApi('/badges');
     },
     create(badge) {
+      //throw new Error('500: server error')
       return callApi(`/badges`, {
         method: 'POST',
         body: JSON.stringify(badge),

@@ -1,9 +1,29 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import Gravatar from './Gravatar'
 //import './styles/Badges.css'
 //import FontAwesome from 'react-fontawesome';
 import "./styles/Badge.css"
 import './styles/BadgesList.css'
+
+class BadgesListItem extends React.Component {
+    render(){
+        return(
+            <div className="container">
+                <div className="row">
+                    <div className="col-3 badge-container-avatar">
+                        <Gravatar className="BadgesListItem__avatar" email={this.props.badge.email} alt="Avatar"/>
+                    </div>
+                    <div className="col-9 badge-container-info">
+                        <h4 className="BadgeList-name">{this.props.badge.firstName}{this.props.badge.lastName}</h4>
+                        <span className="BadgeList-twitter">{this.props.badge.twitter}</span><br/>
+                        <span className="jobTitle">{this.props.badge.jobTitle}</span>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+}
 
 class BadgesList extends React.Component {
     render() {
@@ -21,19 +41,10 @@ class BadgesList extends React.Component {
             <ul className="list-unstyled">
                 {this.props.badges.map((badge)=>{
                     return (
-                        <li key={badge.id}>                       
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-3 badge-container-avatar">
-                                        <img className="Badge__avatar" src={badge.avatarUrl} alt="avatar"/>
-                                    </div>
-                                    <div className="col-9 badge-container-info">
-                                        <h4 className="BadgeList-name">{badge.firstName}{badge.lastName}</h4>
-                                        <span className="BadgeList-twitter">{badge.twitter}</span><br/>
-                                        <span className="jobTitle">{badge.jobTitle}</span>
-                                    </div>
-                                </div>
-                            </div>
+                        <li key={badge.id} className="BadgesListItem">
+                            <Link className="text-reset text-decoration-none" to={`/badges/${badge.id}/edit`}>                      
+                                <BadgesListItem badge={badge} />
+                            </Link>
                         </li>
                     )
                 })}
