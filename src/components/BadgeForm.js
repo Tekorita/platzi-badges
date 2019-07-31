@@ -24,11 +24,12 @@ class BadgeForm extends React.Component {
     handleClick = e => {
         console.log("was click in this module")//metodo para extraer lo q se esta escribiendo
     }
+    /*
     handleSubmit = e => {
         e.preventDefault() //Aqui detenemos el evento del boton para que no envie datos
         console.log("Form was submited")//metodo para extraer lo q se esta escribiendo
         console.log(this.state)//Aqui imprimos todo el estado de los inputs del formulario
-    }
+    }*/
     render() {
         return (
             <React.Fragment>
