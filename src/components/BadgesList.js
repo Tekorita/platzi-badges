@@ -6,7 +6,7 @@ import Gravatar from './Gravatar'
 import "./styles/Badge.css"
 import './styles/BadgesList.css'
 
-cla BadgesListItem extends React.Component {
+class BadgesListItem extends React.Component {
     render(){
         return(
             <div className="container">
