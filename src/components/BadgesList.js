@@ -30,7 +30,7 @@ class BadgesList extends React.Component {
         if (this.props.badges.lenght === 0) {
             return (
                 <div>
-                    <h3>No encontramos ningun badge registrado</h3>
+                    <h3>No encontramos ningun badge registrado por el momento</h3>
                     <Link className="btn btn-primary" to="/badges/new">
                         Create new badge
                     </Link>
