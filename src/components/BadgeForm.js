@@ -73,7 +73,7 @@ class BadgeForm extends React.Component {
                             value={this.props.formValues.jobTitle} />                    
                     </div>
                     <div className="form-group">
-                        <label>Twitter</label>
+                        <label>Twitter or face</label>
                         <input 
                             onChange = {this.props.onChange} 
                             className="form-control" 
