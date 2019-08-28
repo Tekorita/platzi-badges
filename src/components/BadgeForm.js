@@ -37,7 +37,7 @@ class BadgeForm extends React.Component {
             <React.Fragment>
                 <form onSubmit={this.props.onSubmit}>
                     <div className="form-group">
-                        <label>First Name</label>
+                        <label>First Name o primer nombre</label>
                         <input 
                             onChange = {this.props.onChange} 
                             className="form-control" 
