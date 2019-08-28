@@ -55,7 +55,7 @@ class BadgeForm extends React.Component {
                             value={this.props.formValues.lastName} />                    
                     </div>
                     <div className="form-group">
-                        <label>Email</label>
+                        <label>Email o correo</label>
                         <input 
                             onChange = {this.props.onChange} 
                             className="form-control" 
